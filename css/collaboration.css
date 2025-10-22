@@ -1,0 +1,448 @@
+/* Estilos para el sistema de colaboración */
+
+/* Modal de colaboradores */
+.collaboration-modal .modal-content {
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 10px;
+}
+
+.collaboration-modal .modal-header {
+    background-color: #0f3460;
+    border-bottom: 1px solid #1a1a2e;
+    color: #ffffff;
+}
+
+.collaboration-modal .modal-body {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+.collaboration-modal .modal-footer {
+    background-color: #16213e;
+    border-top: 1px solid #0f3460;
+}
+
+/* Botón de invitar colaboradores */
+.btn-invite-collaborators {
+    background: linear-gradient(45deg, #28a745, #20c997) !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 1.4;
+    height: 38px;
+    min-width: 160px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.btn-invite-collaborators:hover {
+    background: linear-gradient(45deg, #20c997, #28a745) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btn-invite-collaborators:focus {
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+    color: white !important;
+    text-decoration: none !important;
+    outline: none;
+}
+
+.btn-invite-collaborators:visited {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btn-invite-collaborators:active {
+    color: white !important;
+    text-decoration: none !important;
+    transform: translateY(0px);
+}
+
+/* Asegurar que el ícono y texto sean blancos y estén bien espaciados */
+.btn-invite-collaborators i {
+    color: white !important;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.btn-invite-collaborators * {
+    color: white !important;
+}
+
+/* Estilos mejorados para el botón "Cambiar Proyecto" */
+.sticky-top-actions .btn-outline-light {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    min-width: 140px;
+    white-space: nowrap;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.sticky-top-actions .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.sticky-top-actions .btn-outline-light:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: white !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+/* Estilos mejorados para el botón "Crear Nuevo Proyecto" */
+.sticky-top-actions .btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    min-width: 160px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.sticky-top-actions .btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #007bff) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    color: white !important;
+}
+
+.sticky-top-actions .btn-primary:focus {
+    background: linear-gradient(45deg, #0056b3, #007bff) !important;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+    color: white !important;
+    outline: none;
+}
+
+.sticky-top-actions .btn-primary:active {
+    transform: translateY(0px);
+    color: white !important;
+}
+
+/* Espaciado del ícono en el botón "Crear Nuevo Proyecto" */
+.sticky-top-actions .btn-primary i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* Alineación de botones en el dashboard */
+.sticky-top-actions .col-md-6:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Asegurar que todos los botones tengan la misma altura */
+.sticky-top-actions .btn,
+.sticky-top-actions .btn-invite-collaborators {
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-top-actions .col-md-6:last-child > * {
+    margin: 0 !important;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    height: 38px;
+    line-height: 1.5;
+}
+
+/* Lista de colaboradores */
+.collaborators-list {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.collaborator-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #0f3460;
+    border-radius: 6px;
+    border: 1px solid #1a1a2e;
+    transition: all 0.3s ease;
+}
+
+.collaborator-item:hover {
+    background-color: #1a4a7a;
+    transform: translateX(5px);
+}
+
+.collaborator-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.collaborator-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #e94560, #ff6a80);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.collaborator-details h6 {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.collaborator-details small {
+    color: #a4d6ff;
+    font-size: 12px;
+}
+
+.collaborator-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-remove-collaborator {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-remove-collaborator:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Formulario de invitación */
+.invite-form {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #0f3460;
+    margin: 15px 0;
+}
+
+.invite-form h5 {
+    color: #ffffff !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.invite-form .form-label {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.invite-form .form-control {
+    background-color: #0f3460;
+    border: 1px solid #1a1a2e;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.invite-form .form-control:focus {
+    background-color: #0f3460;
+    border-color: #e94560;
+    color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.2);
+}
+
+.invite-form .form-control::placeholder {
+    color: #a4d6ff;
+}
+
+.invite-form .form-text {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Botón de enviar invitación */
+.btn-send-invite {
+    background: linear-gradient(45deg, #18b36b, #20c997);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-send-invite:hover {
+    background: linear-gradient(45deg, #20c997, #18b36b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(24, 179, 107, 0.3);
+}
+
+.btn-send-invite:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Alertas de colaboración */
+.collaboration-alert {
+    background-color: #1a1a2e;
+    border: 1px solid #0f3460;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.collaboration-alert.success {
+    border-left: 4px solid #18b36b;
+    background-color: rgba(24, 179, 107, 0.1);
+}
+
+.collaboration-alert.error {
+    border-left: 4px solid #e94560;
+    background-color: rgba(233, 69, 96, 0.1);
+}
+
+.collaboration-alert.warning {
+    border-left: 4px solid #ffc107;
+    background-color: rgba(255, 193, 7, 0.1);
+}
+
+/* Indicador de colaboración en el dashboard */
+.collaboration-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(233, 69, 96, 0.2);
+    color: #e94560;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.collaboration-indicator i {
+    font-size: 14px;
+}
+
+/* Lista de empresas colaborativas */
+.collaborative-enterprises {
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.collaborative-enterprises h5 {
+    color: #ffffff !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.collaborative-enterprises .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.collaborative-enterprise-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #0f3460;
+    border-radius: 6px;
+    border-left: 4px solid #e94560;
+    transition: all 0.3s ease;
+}
+
+.collaborative-enterprise-item:hover {
+    background-color: #1a4a7a;
+    transform: translateX(5px);
+}
+
+.enterprise-info h6 {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.enterprise-info small {
+    color: #a4d6ff;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .collaborator-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .collaborator-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .collaborative-enterprise-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

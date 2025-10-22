@@ -1,0 +1,232 @@
+/* Estilos para objetivos.php */
+
+/* Estilos generales */
+.module-content {
+    padding: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-header {
+    border-radius: 8px 8px 0 0 !important;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+}
+
+/* Estilos para los objetivos */
+.objetivo-general-card {
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.objetivo-general-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-left: 4px solid #4e73df;
+}
+
+.objetivo-general-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.objetivo-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Estilos para objetivos específicos */
+.objetivo-especifico-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.objetivo-especifico-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eaecf4;
+}
+
+/* Estilos para la introducción */
+.intro-card {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.intro-header {
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-dark));
+    color: white;
+    padding: 1rem;
+    border-radius: .25rem .25rem 0 0;
+}
+
+.intro-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Pirámide */
+.pyramid {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 260px solid var(--brand-blue);
+    position: relative;
+    margin: 2rem auto;
+}
+
+.pyramid-level {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: .5rem;
+    width: 220px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.level-top { 
+    top: 35px; 
+    background-color: #f8f9fa;
+}
+
+.level-middle { 
+    top: 120px; 
+    background-color: #e9ecef;
+}
+
+.level-bottom { 
+    top: 210px; 
+    background-color: #dee2e6;
+}
+
+/* Tabla METAS */
+.metas-table {
+    border-collapse: collapse;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.metas-table th, .metas-table td {
+    border: 1px solid #dee2e6;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.metas-table th {
+    background: linear-gradient(135deg, var(--brand-green), var(--brand-green-600));
+    color: #fff;
+    width: 40px;
+    text-align: center;
+}
+
+.metas-table td strong {
+    color: var(--brand-blue);
+}
+
+/* Listas */
+.intro-body ul, .intro-body ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.example-list li {
+    margin-bottom: 8px;
+}
+
+.subsection {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Estilos para el formulario de UEN */
+.uen-form {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.uen-form h4 {
+    color: var(--brand-blue);
+    margin-bottom: 1rem;
+}
+
+.uen-example {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Botones y acciones */
+.btn-save {
+    background: linear-gradient(135deg, var(--brand-green), var(--brand-green-600));
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-save:hover {
+    background: linear-gradient(135deg, var(--brand-green-600), var(--brand-green));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-nav {
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-dark));
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background: linear-gradient(135deg, var(--brand-dark), var(--brand-blue));
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-nav-outline {
+    color: var(--brand-blue);
+    border: 1px solid var(--brand-blue);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-nav-outline:hover {
+    background-color: var(--brand-blue);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

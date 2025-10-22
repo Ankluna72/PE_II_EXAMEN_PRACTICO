@@ -1,0 +1,12 @@
+/* Contactos (contactos.php) */
+body { background: linear-gradient(180deg, #f5faff 0%, #eef6fb 100%); }
+
+:root { --brand-dark: #0b1f2a; --brand-blue: #0f2f46; --brand-green: #18b36b; --brand-green-600: #12935a; }
+.section-title { color: var(--brand-blue); font-weight: 700; }
+.card-minimal { border: 1px solid rgba(15,47,70,.12); border-radius: .75rem; }
+.btn-brand { background-color: var(--brand-green); border-color: var(--brand-green); color: #ffffff; }
+.btn-brand:hover { background-color: var(--brand-green-600); border-color: var(--brand-green-600); color: #ffffff; }
+.nav-minimal { background-color: #ffffff; border-bottom: 1px solid rgba(15,47,70,.12); }
+.navbar-brand img { height: 56px; }
+
+
